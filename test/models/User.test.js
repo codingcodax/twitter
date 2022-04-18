@@ -1,3 +1,5 @@
+const User = require('./../../app/models/User');
+
 describe('Unit Tests for User class', () => {
   test('Create an User object', () => {
     const user = new User(
@@ -6,14 +8,14 @@ describe('Unit Tests for User class', () => {
       'Carlo',
       'Bio',
       'dateCreated',
-      'lastupdated'
+      'lastUpdated'
     );
 
     expect(user.id).toBe(1);
     expect(user.username).toBe('carlogilmar');
-    expect(user.name).toBe('carlo');
+    expect(user.name).toBe('Carlo');
     expect(user.bio).toBe('Bio');
     expect(user.dateCreated).toBe('dateCreated');
-    expect(user.lastupdated).toBe('lastupdated');
+    expect(user.lastUpdated).toBe('lastUpdated');
   });
 });
