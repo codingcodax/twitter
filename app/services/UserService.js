@@ -6,6 +6,11 @@ class UserService {
   }
 
   static getInfo = (user) => Object.values(user).map((userValue) => userValue);
+
+  static updateUserUsername = (user, newUsername) => {
+    user.username = newUsername;
+    return user;
+  };
 }
 
 module.exports = UserService;
